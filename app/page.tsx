@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Gamepad2, Trophy, Zap } from "lucide-react";
+import { ChartBarIcon, Gamepad2, Trophy, Zap } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -21,6 +21,12 @@ export default function HomePage() {
               <Button size="lg" className="px-8 py-6 text-lg bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600">
                 <Gamepad2 className="mr-2 h-5 w-5" />
                 Play Now
+              </Button>
+            </Link>
+            <Link href="/prediction">
+              <Button size="lg" className="px-8 py-6 text-lg bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600">
+                <ChartBarIcon className="mr-2 h-5 w-5" />
+                Predict Now
               </Button>
             </Link>
             <Link href="/leaderboard">

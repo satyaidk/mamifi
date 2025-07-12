@@ -10,7 +10,7 @@ export default function ProfilePage() {
               U
             </div>
             <h1 className="text-2xl font-bold">User Profile</h1>
-            <p className="text-gray-400">@username</p>
+            <p className="text-gray-400">@0x1234567890</p>
           </div>
           
           <div className="space-y-4">
@@ -19,19 +19,19 @@ export default function ProfilePage() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm text-gray-400">Games Played</p>
-                  <p className="text-xl font-bold">24</p>
+                  <p className="text-xl font-bold">6</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">High Score</p>
-                  <p className="text-xl font-bold">1,250</p>
+                  <p className="text-xl font-bold">140</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Rank</p>
-                  <p className="text-xl font-bold">#42</p>
+                  <p className="text-xl font-bold">#12</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Total Points</p>
-                  <p className="text-xl font-bold">8,760</p>
+                  <p className="text-xl font-bold">1200</p>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function ProfilePage() {
             <div className="bg-gray-700/50 p-4 rounded-lg">
               <h3 className="font-medium text-gray-300 mb-3">Achievements</h3>
               <div className="grid grid-cols-2 gap-3">
-                {['Bubble Popper', 'Time Master', 'Survivor', 'Combo King'].map((achievement, i) => (
+                {['Bubble Popper', 'Snake Master', 'Time Master', 'Survivor', 'Predictor'].map((achievement, i) => (
                   <div key={i} className="flex items-center space-x-2 bg-gray-600/30 p-2 rounded">
                     <div className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center">
                       <span className="text-yellow-400 text-sm">🏆</span>

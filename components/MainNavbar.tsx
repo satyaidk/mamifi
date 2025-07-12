@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Gamepad2, Trophy, Settings, User } from 'lucide-react';
+import { Home, Gamepad2, Trophy, Settings, User, ChartLine } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import WalletConnector from './navbar';
 
@@ -16,10 +16,11 @@ export default function MainNavbar() {
       href: '/',
       icon: Home,
     },
+    
     {
-      name: 'Play',
-      href: '/game',
-      icon: Gamepad2,
+      name: 'Prediction',
+      href: '/prediction',
+      icon: ChartLine,
     },
     {
       name: 'Leaderboard',
@@ -39,6 +40,7 @@ export default function MainNavbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
+              <img src="/images/logo_monad.jpg" alt="Monad Gaming DApp Logo" className="h-9 w-9 mr-2 rounded" />
               <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
                 Monad Gaming DApp
               </span>

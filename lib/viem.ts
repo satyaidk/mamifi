@@ -7,7 +7,7 @@ import { loadKey } from "./keyCache";
 export const monadTestnet = defineChain({
   id: 10143,                         // official test-net ID :contentReference[oaicite:6]{index=6}
   name: "Monad Testnet",
-  nativeCurrency: { name: "tMON", symbol: "tMON", decimals: 18 },
+  nativeCurrency: { name: "MIT", symbol: "MIT", decimals: 18 },
   rpcUrls: { default: { http: ["https://testnet-rpc.monad.xyz"] } },
 });
 
